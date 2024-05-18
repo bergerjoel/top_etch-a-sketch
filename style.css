@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  width: 60vmin;
+  height: 60vmin;
+  gap: 1px;
+}
+
+/* Targeting each div inside the container. */
+.container {
+  border: 1px solid #666666;
+}
+
+/* using "::after" pseudoelement to change the divs to a square block. This could also be achieved with different means.  */
+.container > div::after {
+  content: "";
+  display: block;
+  padding-top: 100%; /* Makes the div a square by setting height relative to width */
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+}
+
+.info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
