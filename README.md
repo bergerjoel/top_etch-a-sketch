@@ -2,20 +2,6 @@
 
 This repository holds my current version of the [_EProject: Etch-a-Sketch_](https://www.theodinproject.com/lessons/foundations-etch-a-sketch), which is part of the [_Javascript Basics_](https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics)course of [The Odin Project](https://www.theodinproject.com/).
 
-## Setup
-
-Running the quiz on the development server:
-
-```
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
 ## Description
 
 The intent of this exercise was to start off with an almost barebone HTML file and only use Javascript DOM manipulation to build a reactive surface on which a user can "sketch" on when hovering over it.
